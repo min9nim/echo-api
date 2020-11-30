@@ -6,7 +6,7 @@ module.exports = (req, res) => {
     cookies: req.cookies,
   }
 
-  console.log(result)
+  console.log(JSON.stringify(result, null, 2))
 
   res.json(result)
 }
